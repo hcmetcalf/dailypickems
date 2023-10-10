@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100px;
+    width: 100%;    
+    padding: 0 10%;
+    background: #ffffff;
+    position: relative;
+    border-bottom-width: 2px;
+    border-bottom-style: solid; 
+    border-bottom-color: black;
+}
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.scoreboard{
+    width: 70px;
+}
+
+.nav-links{
+    padding: 28px 0;
+}
+.nav-links li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 0; 
+    position: relative;  
+}
+.nav-links li a::after{
+    content: '';    
+    background: black;  
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+.nav-links li a:hover::after{
+    width: 100%;
+}
+.btn{
+    background: black;
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.content{
+    position: absolute;
+    left: 50%;
+    top: 135%;   
+    width: 90%; 
+    max-width: 900px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+}
+.content h1{
+    font-size: 65px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.matchup-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.matchup{
+    width: 350px;
+    height: 300px;   
+    background-color: white;
+    margin: 0 50px;
+    border-width: 3px;  
+    border-style: solid;
+    border-color: black;
+}
+.matchup-list h2{
+    font-size: 30px;    
+    font-weight: 600;   
+    color: black;
+}
